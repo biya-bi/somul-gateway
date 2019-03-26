@@ -1,0 +1,23 @@
+server:
+  port: 8000
+zuul:
+  prefix: /api
+  routes:
+    multiplications:
+      path: /multiplications/**
+      url: http://localhost:9080/multiplications
+    results:
+      path: /results/**
+      url:  http://localhost:9080/results
+    leaders:
+      path: /leaders/**
+      url: http://localhost:7080/leaders
+    stats:
+      path: /stats/**
+      url: http://localhost:7080/stats
+endpoints:
+  trace:
+    sensitive: false
+ribbon:
+  eureka:
+    enabled: false
