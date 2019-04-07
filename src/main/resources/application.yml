@@ -27,3 +27,6 @@ eureka:
 endpoints:
   trace:
     sensitive: false
+spring:
+  jmx:
+    default-domain: gateway
