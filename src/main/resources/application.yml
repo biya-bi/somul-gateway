@@ -9,7 +9,7 @@ zuul:
       serviceId: multiplication
       strip-prefix: false
     results:
-      path: /results/**
+      path: /attempts/**
       serviceId: multiplication
       strip-prefix: false
     leaders:
